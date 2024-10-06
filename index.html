@@ -11,6 +11,15 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <style>
+   .active {
+    background-color: red;
+    color: white;
+}
+
+
+    </style>
+
     <!-- custom config -->
     <script>
         tailwind.config = {
@@ -26,7 +35,7 @@
 </head>
 <body id="body " >
     <header class="w-11/12 mx-auto container overflow-x-hidden py-2">
-        <nav class="flex justify-between items-center border-b pt-3 pb-5">
+        <nav class="flex justify-between items-center border-b pt-3 pb-5 ">
             <!-- Nav-logo -->
             <div class="logo w-[120px]">
                 <img src="./asset/Logo.png" alt="">
@@ -50,15 +59,26 @@
             </div>
             <!-- Nav-short -->
             <div class="short ">
-                <button class="btn bg-red-500 text-white text-lg px-6"> Blog  </button>
+                <button class="btn bg-red-500  text-lg px-6"> Blog  </button>
             </div>
         </nav>
 
         <!-- categories nav -->
          <nav id="categories" class="flex justify-center gap-5 my-5"></nav>
     </header>
+
+    <!-- Main section -->
+     <main>
+      <section>
+        <div id="videos"
+         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 
+         w-11/12 mx-auto container overflow-x-hidden py-8">
+        </div>
+      </section>
+     </main>
     
 
+    <script src="./script/utilities.js"></script>
     <script src="./script/video.js"></script>
 </body>
 </html>
